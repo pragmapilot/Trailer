@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Trailer
 //
-//  Created by Rodrigo Goncalves on 17/02/2016.
+//  Created by PragmaPilot on 17/02/2016.
 //  Copyright © 2016 PragmaPilot. All rights reserved.
 //
 
