@@ -19,6 +19,14 @@
 		C70B12AC1C749F05007FC744 /* PPTPersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12AA1C749F05007FC744 /* PPTPersistenceManager.swift */; };
 		C70B12AE1C749F57007FC744 /* PPTPathsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12AD1C749F57007FC744 /* PPTPathsManager.swift */; };
 		C70B12AF1C749F57007FC744 /* PPTPathsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12AD1C749F57007FC744 /* PPTPathsManager.swift */; };
+		C70B12B51C74A87B007FC744 /* Trail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B11C74A87B007FC744 /* Trail+CoreDataProperties.swift */; };
+		C70B12B61C74A87B007FC744 /* Trail+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B11C74A87B007FC744 /* Trail+CoreDataProperties.swift */; };
+		C70B12B71C74A87B007FC744 /* Trail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B21C74A87B007FC744 /* Trail.swift */; };
+		C70B12B81C74A87B007FC744 /* Trail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B21C74A87B007FC744 /* Trail.swift */; };
+		C70B12B91C74A87B007FC744 /* Fix+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B31C74A87B007FC744 /* Fix+CoreDataProperties.swift */; };
+		C70B12BA1C74A87B007FC744 /* Fix+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B31C74A87B007FC744 /* Fix+CoreDataProperties.swift */; };
+		C70B12BB1C74A87B007FC744 /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B41C74A87B007FC744 /* Fix.swift */; };
+		C70B12BC1C74A87B007FC744 /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B41C74A87B007FC744 /* Fix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,10 @@
 		C70B12A71C749DC5007FC744 /* Trailer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trailer.xcdatamodel; sourceTree = "<group>"; };
 		C70B12AA1C749F05007FC744 /* PPTPersistenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPTPersistenceManager.swift; path = Classes/Common/Managers/PPTPersistenceManager.swift; sourceTree = "<group>"; };
 		C70B12AD1C749F57007FC744 /* PPTPathsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPTPathsManager.swift; path = Classes/Common/Managers/PPTPathsManager.swift; sourceTree = "<group>"; };
+		C70B12B11C74A87B007FC744 /* Trail+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Trail+CoreDataProperties.swift"; path = "Classes/Common/Store/Entities/Trail+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C70B12B21C74A87B007FC744 /* Trail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trail.swift; path = Classes/Common/Store/Entities/Trail.swift; sourceTree = "<group>"; };
+		C70B12B31C74A87B007FC744 /* Fix+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Fix+CoreDataProperties.swift"; path = "Classes/Common/Store/Entities/Fix+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C70B12B41C74A87B007FC744 /* Fix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fix.swift; path = Classes/Common/Store/Entities/Fix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +154,7 @@
 		C70B12A41C749D97007FC744 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				C70B12B01C74A787007FC744 /* Entities */,
 				C70B12A61C749DC5007FC744 /* Trailer.xcdatamodeld */,
 			);
 			name = Store;
@@ -154,6 +167,17 @@
 				C70B12AD1C749F57007FC744 /* PPTPathsManager.swift */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		C70B12B01C74A787007FC744 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C70B12B11C74A87B007FC744 /* Trail+CoreDataProperties.swift */,
+				C70B12B21C74A87B007FC744 /* Trail.swift */,
+				C70B12B31C74A87B007FC744 /* Fix+CoreDataProperties.swift */,
+				C70B12B41C74A87B007FC744 /* Fix.swift */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,10 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C70B12801C749BF0007FC744 /* ViewController.swift in Sources */,
+				C70B12BB1C74A87B007FC744 /* Fix.swift in Sources */,
+				C70B12B91C74A87B007FC744 /* Fix+CoreDataProperties.swift in Sources */,
 				C70B12AE1C749F57007FC744 /* PPTPathsManager.swift in Sources */,
+				C70B12B51C74A87B007FC744 /* Trail+CoreDataProperties.swift in Sources */,
 				C70B127E1C749BF0007FC744 /* PPTAppDelegate.swift in Sources */,
 				C70B12AB1C749F05007FC744 /* PPTPersistenceManager.swift in Sources */,
 				C70B12A81C749DC5007FC744 /* Trailer.xcdatamodeld in Sources */,
+				C70B12B71C74A87B007FC744 /* Trail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C70B12961C749BF1007FC744 /* TrailerTests.swift in Sources */,
+				C70B12BA1C74A87B007FC744 /* Fix+CoreDataProperties.swift in Sources */,
 				C70B12AC1C749F05007FC744 /* PPTPersistenceManager.swift in Sources */,
+				C70B12BC1C74A87B007FC744 /* Fix.swift in Sources */,
 				C70B12A91C749DC5007FC744 /* Trailer.xcdatamodeld in Sources */,
 				C70B12AF1C749F57007FC744 /* PPTPathsManager.swift in Sources */,
+				C70B12B81C74A87B007FC744 /* Trail.swift in Sources */,
+				C70B12B61C74A87B007FC744 /* Trail+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
