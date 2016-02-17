@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C70B127E1C749BF0007FC744 /* PPTAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B127D1C749BF0007FC744 /* PPTAppDelegate.swift */; };
-		C70B12801C749BF0007FC744 /* TrailsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B127F1C749BF0007FC744 /* TrailsListViewController.swift */; };
-		C70B12831C749BF0007FC744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70B12811C749BF0007FC744 /* Main.storyboard */; };
+		C70B12801C749BF0007FC744 /* PPTTrailsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B127F1C749BF0007FC744 /* PPTTrailsListViewController.swift */; };
 		C70B12881C749BF0007FC744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70B12871C749BF0007FC744 /* Assets.xcassets */; };
 		C70B128B1C749BF0007FC744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70B12891C749BF0007FC744 /* LaunchScreen.storyboard */; };
 		C70B12961C749BF1007FC744 /* TrailerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12951C749BF1007FC744 /* TrailerTests.swift */; };
@@ -27,6 +26,8 @@
 		C70B12BA1C74A87B007FC744 /* Fix+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B31C74A87B007FC744 /* Fix+CoreDataProperties.swift */; };
 		C70B12BB1C74A87B007FC744 /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B41C74A87B007FC744 /* Fix.swift */; };
 		C70B12BC1C74A87B007FC744 /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B41C74A87B007FC744 /* Fix.swift */; };
+		C7AB02321C74B220008D13DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AB02311C74B220008D13DE /* Main.storyboard */; };
+		C7AB02331C74B220008D13DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AB02311C74B220008D13DE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,7 @@
 /* Begin PBXFileReference section */
 		C70B127A1C749BF0007FC744 /* Trailer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trailer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70B127D1C749BF0007FC744 /* PPTAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PPTAppDelegate.swift; path = AppDelegate/PPTAppDelegate.swift; sourceTree = "<group>"; };
-		C70B127F1C749BF0007FC744 /* TrailsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailsListViewController.swift; sourceTree = "<group>"; };
-		C70B12821C749BF0007FC744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C70B127F1C749BF0007FC744 /* PPTTrailsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPTTrailsListViewController.swift; sourceTree = "<group>"; };
 		C70B12871C749BF0007FC744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C70B128A1C749BF0007FC744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C70B128C1C749BF0007FC744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +57,7 @@
 		C70B12B21C74A87B007FC744 /* Trail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Trail.swift; path = Classes/Common/Store/Entities/Trail.swift; sourceTree = "<group>"; };
 		C70B12B31C74A87B007FC744 /* Fix+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Fix+CoreDataProperties.swift"; path = "Classes/Common/Store/Entities/Fix+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C70B12B41C74A87B007FC744 /* Fix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fix.swift; path = Classes/Common/Store/Entities/Fix.swift; sourceTree = "<group>"; };
+		C7AB02311C74B220008D13DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Resources/Storyboards/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +101,10 @@
 			children = (
 				C70B12A11C749D74007FC744 /* Classes */,
 				C70B12A01C749D65007FC744 /* AppDelegate */,
-				C70B12811C749BF0007FC744 /* Main.storyboard */,
 				C70B12871C749BF0007FC744 /* Assets.xcassets */,
 				C70B12891C749BF0007FC744 /* LaunchScreen.storyboard */,
 				C70B128C1C749BF0007FC744 /* Info.plist */,
+				C7AB02311C74B220008D13DE /* Main.storyboard */,
 			);
 			path = Trailer;
 			sourceTree = "<group>";
@@ -207,7 +208,7 @@
 		C70B12C01C74AE7A007FC744 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C70B127F1C749BF0007FC744 /* TrailsListViewController.swift */,
+				C70B127F1C749BF0007FC744 /* PPTTrailsListViewController.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -293,9 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AB02321C74B220008D13DE /* Main.storyboard in Resources */,
 				C70B128B1C749BF0007FC744 /* LaunchScreen.storyboard in Resources */,
 				C70B12881C749BF0007FC744 /* Assets.xcassets in Resources */,
-				C70B12831C749BF0007FC744 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AB02331C74B220008D13DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C70B12801C749BF0007FC744 /* TrailsListViewController.swift in Sources */,
+				C70B12801C749BF0007FC744 /* PPTTrailsListViewController.swift in Sources */,
 				C70B12BB1C74A87B007FC744 /* Fix.swift in Sources */,
 				C70B12B91C74A87B007FC744 /* Fix+CoreDataProperties.swift in Sources */,
 				C70B12AE1C749F57007FC744 /* PPTPathsManager.swift in Sources */,
@@ -351,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C70B12811C749BF0007FC744 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C70B12821C749BF0007FC744 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C70B12891C749BF0007FC744 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
