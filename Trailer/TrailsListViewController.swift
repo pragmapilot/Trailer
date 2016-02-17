@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TrailsListViewController.swift
 //  Trailer
 //
 //  Created by PragmaPilot on 17/02/2016.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TrailsListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
