@@ -28,6 +28,12 @@
 		C70B12BC1C74A87B007FC744 /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70B12B41C74A87B007FC744 /* Fix.swift */; };
 		C7AB02321C74B220008D13DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AB02311C74B220008D13DE /* Main.storyboard */; };
 		C7AB02331C74B220008D13DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AB02311C74B220008D13DE /* Main.storyboard */; };
+		C7AB02361C74C651008D13DE /* PPTTrailsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02351C74C651008D13DE /* PPTTrailsListPresenter.swift */; };
+		C7AB02371C74C651008D13DE /* PPTTrailsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02351C74C651008D13DE /* PPTTrailsListPresenter.swift */; };
+		C7AB02391C74C6C0008D13DE /* PPTrailsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02381C74C6C0008D13DE /* PPTrailsListInteractor.swift */; };
+		C7AB023A1C74C6C0008D13DE /* PPTrailsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02381C74C6C0008D13DE /* PPTrailsListInteractor.swift */; };
+		C7AB023E1C74CA09008D13DE /* PPTTrailsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB023D1C74CA09008D13DE /* PPTTrailsDataManager.swift */; };
+		C7AB023F1C74CA09008D13DE /* PPTTrailsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB023D1C74CA09008D13DE /* PPTTrailsDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,9 @@
 		C70B12B31C74A87B007FC744 /* Fix+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Fix+CoreDataProperties.swift"; path = "Classes/Common/Store/Entities/Fix+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C70B12B41C74A87B007FC744 /* Fix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fix.swift; path = Classes/Common/Store/Entities/Fix.swift; sourceTree = "<group>"; };
 		C7AB02311C74B220008D13DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Resources/Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		C7AB02351C74C651008D13DE /* PPTTrailsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPTTrailsListPresenter.swift; path = "Classes/Modules/Trails List/User Interface/Presenter/PPTTrailsListPresenter.swift"; sourceTree = "<group>"; };
+		C7AB02381C74C6C0008D13DE /* PPTrailsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPTrailsListInteractor.swift; path = "Classes/Modules/Trails List/Application Logic/Interactor/PPTrailsListInteractor.swift"; sourceTree = "<group>"; };
+		C7AB023D1C74CA09008D13DE /* PPTTrailsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPTTrailsDataManager.swift; path = "Classes/Modules/Trails List/Application Logic/Manager/PPTTrailsDataManager.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +201,7 @@
 		C70B12BE1C74AD3E007FC744 /* Trails List */ = {
 			isa = PBXGroup;
 			children = (
+				C7AB023B1C74C6C6008D13DE /* Application Logic */,
 				C70B12BF1C74AE6E007FC744 /* User Interface */,
 			);
 			name = "Trails List";
@@ -200,6 +210,7 @@
 		C70B12BF1C74AE6E007FC744 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				C7AB02341C74C617008D13DE /* Presenter */,
 				C70B12C01C74AE7A007FC744 /* View */,
 			);
 			name = "User Interface";
@@ -211,6 +222,39 @@
 				C70B127F1C749BF0007FC744 /* PPTTrailsListViewController.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C7AB02341C74C617008D13DE /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB02351C74C651008D13DE /* PPTTrailsListPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		C7AB023B1C74C6C6008D13DE /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB02401C74CA0F008D13DE /* Manager */,
+				C7AB023C1C74C6D1008D13DE /* Interactor */,
+			);
+			name = "Application Logic";
+			sourceTree = "<group>";
+		};
+		C7AB023C1C74C6D1008D13DE /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB02381C74C6C0008D13DE /* PPTrailsListInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		C7AB02401C74CA0F008D13DE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB023D1C74CA09008D13DE /* PPTTrailsDataManager.swift */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,9 +362,12 @@
 				C70B12801C749BF0007FC744 /* PPTTrailsListViewController.swift in Sources */,
 				C70B12BB1C74A87B007FC744 /* Fix.swift in Sources */,
 				C70B12B91C74A87B007FC744 /* Fix+CoreDataProperties.swift in Sources */,
+				C7AB02391C74C6C0008D13DE /* PPTrailsListInteractor.swift in Sources */,
 				C70B12AE1C749F57007FC744 /* PPTPathsManager.swift in Sources */,
+				C7AB023E1C74CA09008D13DE /* PPTTrailsDataManager.swift in Sources */,
 				C70B12B51C74A87B007FC744 /* Trail+CoreDataProperties.swift in Sources */,
 				C70B127E1C749BF0007FC744 /* PPTAppDelegate.swift in Sources */,
+				C7AB02361C74C651008D13DE /* PPTTrailsListPresenter.swift in Sources */,
 				C70B12AB1C749F05007FC744 /* PPTPersistenceManager.swift in Sources */,
 				C70B12A81C749DC5007FC744 /* Trailer.xcdatamodeld in Sources */,
 				C70B12B71C74A87B007FC744 /* Trail.swift in Sources */,
@@ -332,9 +379,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C70B12961C749BF1007FC744 /* TrailerTests.swift in Sources */,
+				C7AB02371C74C651008D13DE /* PPTTrailsListPresenter.swift in Sources */,
+				C7AB023F1C74CA09008D13DE /* PPTTrailsDataManager.swift in Sources */,
 				C70B12BA1C74A87B007FC744 /* Fix+CoreDataProperties.swift in Sources */,
 				C70B12AC1C749F05007FC744 /* PPTPersistenceManager.swift in Sources */,
 				C70B12BC1C74A87B007FC744 /* Fix.swift in Sources */,
+				C7AB023A1C74C6C0008D13DE /* PPTrailsListInteractor.swift in Sources */,
 				C70B12A91C749DC5007FC744 /* Trailer.xcdatamodeld in Sources */,
 				C70B12AF1C749F57007FC744 /* PPTPathsManager.swift in Sources */,
 				C70B12B81C74A87B007FC744 /* Trail.swift in Sources */,
