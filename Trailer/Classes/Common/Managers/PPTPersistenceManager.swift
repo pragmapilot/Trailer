@@ -53,7 +53,22 @@ class PPTPersistenceManager: NSObject {
         return managedObjectContext
     }()
     
-    // MARK: - Core Data Saving support
+    func fetchEntriesForEntityWithName(name: String, predicate: NSPredicate?, sortDescriptors: [AnyObject]?, completionBlock: (([NSManagedObject]) -> Void)!) {
+        let fetchRequest = NSFetchRequest(entityName: name)
+        fetchRequest.predicate = predicate
+        fetchRequest.sortDescriptors = []
+
+        self.managedObjectContext.performBlock {
+            do {
+                let queryResults = try self.managedObjectContext.executeFetchRequest(fetchRequest)
+                let managedResults = queryResults as! [NSManagedObject]
+                completionBlock(managedResults)
+            } catch let error as NSError {
+                // TODO DLog'it
+                NSLog("Error while fetching \(name): \(error)")
+            }
+        }
+    }
     
     func saveContext () {
         if managedObjectContext.hasChanges {
