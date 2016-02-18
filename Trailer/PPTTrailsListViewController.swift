@@ -12,6 +12,9 @@ import CoreData
 class PPTTrailsListViewController: UITableViewController {
 
     private var trails: Array<Trail>?     // TODO Refactor
+    lazy var persistenceManager: PPTPersistenceManager = {
+        return PPTPersistenceManager()
+    }()     // TODO Refactor
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +41,7 @@ class PPTTrailsListViewController: UITableViewController {
     }
     
     private func setData(){
-        let persistenceManager = PPTPersistenceManager()
+
         let trail1 = NSEntityDescription.insertNewObjectForEntityForName("Trail", inManagedObjectContext: persistenceManager.managedObjectContext) as! Trail
         let trail2 = NSEntityDescription.insertNewObjectForEntityForName("Trail", inManagedObjectContext: persistenceManager.managedObjectContext) as! Trail
         
