@@ -12,26 +12,21 @@ import CoreData
 class PPTTrailsListViewController: UITableViewController, PPTTrailsListViewInterface {
 
     // MARK - Properties
-    
-    private var trails: Array<Trail>?     // TODO Refactor
-    lazy var persistenceManager: PPTPersistenceManager = {
-        return PPTPersistenceManager()
-    }()     // TODO Refactor
+
+    private var trails: [Trail]?
     
     // MARK - ViewController life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setData()           // TODO Remove
         configureView()
     }
     
     // MARK - UITableViewController
     
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (self.trails?.count)!     // TODO Refactor
+        return (self.trails?.count)!
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -62,17 +57,6 @@ class PPTTrailsListViewController: UITableViewController, PPTTrailsListViewInter
     private func configureView() {
         // Show no empty cells
         tableView.tableFooterView = UIView()
-    }
-    
-    private func setData(){
-
-        let trail1 = NSEntityDescription.insertNewObjectForEntityForName("Trail", inManagedObjectContext: persistenceManager.managedObjectContext) as! Trail
-        let trail2 = NSEntityDescription.insertNewObjectForEntityForName("Trail", inManagedObjectContext: persistenceManager.managedObjectContext) as! Trail
-        
-        trail1.trail_description = "My first trail"
-        trail2.trail_description = "My second trail"
-        
-        self.trails = [trail1,trail2]
     }
 }
 
