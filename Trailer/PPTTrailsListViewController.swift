@@ -9,12 +9,16 @@
 import UIKit
 import CoreData
 
-class PPTTrailsListViewController: UITableViewController {
+class PPTTrailsListViewController: UITableViewController, PPTTrailsListViewInterface {
 
+    // MARK - Properties
+    
     private var trails: Array<Trail>?     // TODO Refactor
     lazy var persistenceManager: PPTPersistenceManager = {
         return PPTPersistenceManager()
     }()     // TODO Refactor
+    
+    // MARK - ViewController life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +26,9 @@ class PPTTrailsListViewController: UITableViewController {
         setData()           // TODO Remove
         configureView()
     }
+    
+    // MARK - UITableViewController
+    
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (self.trails?.count)!     // TODO Refactor
@@ -34,6 +41,23 @@ class PPTTrailsListViewController: UITableViewController {
         
         return cell
     }
+    
+    // MARK - PPTTrailsListViewInterface
+    
+    func showNoContentView() {
+        // TODO
+    }
+    
+    func showTrailsList(trails: [Trail]) {
+        self.trails = trails
+        reloadData()
+    }
+    
+    func reloadData() {
+        tableView.reloadData()
+    }
+    
+    // MARK - Private
     
     private func configureView() {
         // Show no empty cells

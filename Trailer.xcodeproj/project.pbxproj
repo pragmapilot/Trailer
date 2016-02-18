@@ -30,10 +30,14 @@
 		C7AB02331C74B220008D13DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7AB02311C74B220008D13DE /* Main.storyboard */; };
 		C7AB02361C74C651008D13DE /* PPTTrailsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02351C74C651008D13DE /* PPTTrailsListPresenter.swift */; };
 		C7AB02371C74C651008D13DE /* PPTTrailsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02351C74C651008D13DE /* PPTTrailsListPresenter.swift */; };
-		C7AB02391C74C6C0008D13DE /* PPTrailsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02381C74C6C0008D13DE /* PPTrailsListInteractor.swift */; };
-		C7AB023A1C74C6C0008D13DE /* PPTrailsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02381C74C6C0008D13DE /* PPTrailsListInteractor.swift */; };
+		C7AB02391C74C6C0008D13DE /* PPTTrailsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02381C74C6C0008D13DE /* PPTTrailsListInteractor.swift */; };
+		C7AB023A1C74C6C0008D13DE /* PPTTrailsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02381C74C6C0008D13DE /* PPTTrailsListInteractor.swift */; };
 		C7AB023E1C74CA09008D13DE /* PPTTrailsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB023D1C74CA09008D13DE /* PPTTrailsDataManager.swift */; };
 		C7AB023F1C74CA09008D13DE /* PPTTrailsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB023D1C74CA09008D13DE /* PPTTrailsDataManager.swift */; };
+		C7AB02451C760B6C008D13DE /* PPTTrailsListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02441C760B6C008D13DE /* PPTTrailsListViewInterface.swift */; };
+		C7AB02461C760B6C008D13DE /* PPTTrailsListViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02441C760B6C008D13DE /* PPTTrailsListViewInterface.swift */; };
+		C7AB02481C76105A008D13DE /* PPTTrailsListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02471C76105A008D13DE /* PPTTrailsListInteractorIO.swift */; };
+		C7AB02491C76105A008D13DE /* PPTTrailsListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AB02471C76105A008D13DE /* PPTTrailsListInteractorIO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +69,10 @@
 		C70B12B41C74A87B007FC744 /* Fix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fix.swift; path = Classes/Common/Store/Entities/Fix.swift; sourceTree = "<group>"; };
 		C7AB02311C74B220008D13DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Resources/Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		C7AB02351C74C651008D13DE /* PPTTrailsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPTTrailsListPresenter.swift; path = "Classes/Modules/Trails List/User Interface/Presenter/PPTTrailsListPresenter.swift"; sourceTree = "<group>"; };
-		C7AB02381C74C6C0008D13DE /* PPTrailsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPTrailsListInteractor.swift; path = "Classes/Modules/Trails List/Application Logic/Interactor/PPTrailsListInteractor.swift"; sourceTree = "<group>"; };
+		C7AB02381C74C6C0008D13DE /* PPTTrailsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPTTrailsListInteractor.swift; path = "Classes/Modules/Trails List/Application Logic/Interactor/PPTTrailsListInteractor.swift"; sourceTree = "<group>"; };
 		C7AB023D1C74CA09008D13DE /* PPTTrailsDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPTTrailsDataManager.swift; path = "Classes/Modules/Trails List/Application Logic/Manager/PPTTrailsDataManager.swift"; sourceTree = "<group>"; };
+		C7AB02441C760B6C008D13DE /* PPTTrailsListViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPTTrailsListViewInterface.swift; path = "Classes/Modules/Trails List/User Interface/View/PPTTrailsListViewInterface.swift"; sourceTree = "<group>"; };
+		C7AB02471C76105A008D13DE /* PPTTrailsListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPTTrailsListInteractorIO.swift; path = "Classes/Modules/Trails List/Application Logic/Interactor/PPTTrailsListInteractorIO.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				C70B127F1C749BF0007FC744 /* PPTTrailsListViewController.swift */,
+				C7AB02441C760B6C008D13DE /* PPTTrailsListViewInterface.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -244,7 +251,8 @@
 		C7AB023C1C74C6D1008D13DE /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				C7AB02381C74C6C0008D13DE /* PPTrailsListInteractor.swift */,
+				C7AB02381C74C6C0008D13DE /* PPTTrailsListInteractor.swift */,
+				C7AB02471C76105A008D13DE /* PPTTrailsListInteractorIO.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -359,10 +367,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AB02481C76105A008D13DE /* PPTTrailsListInteractorIO.swift in Sources */,
 				C70B12801C749BF0007FC744 /* PPTTrailsListViewController.swift in Sources */,
 				C70B12BB1C74A87B007FC744 /* Fix.swift in Sources */,
 				C70B12B91C74A87B007FC744 /* Fix+CoreDataProperties.swift in Sources */,
-				C7AB02391C74C6C0008D13DE /* PPTrailsListInteractor.swift in Sources */,
+				C7AB02391C74C6C0008D13DE /* PPTTrailsListInteractor.swift in Sources */,
+				C7AB02451C760B6C008D13DE /* PPTTrailsListViewInterface.swift in Sources */,
 				C70B12AE1C749F57007FC744 /* PPTPathsManager.swift in Sources */,
 				C7AB023E1C74CA09008D13DE /* PPTTrailsDataManager.swift in Sources */,
 				C70B12B51C74A87B007FC744 /* Trail+CoreDataProperties.swift in Sources */,
@@ -378,13 +388,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AB02461C760B6C008D13DE /* PPTTrailsListViewInterface.swift in Sources */,
 				C70B12961C749BF1007FC744 /* TrailerTests.swift in Sources */,
 				C7AB02371C74C651008D13DE /* PPTTrailsListPresenter.swift in Sources */,
+				C7AB02491C76105A008D13DE /* PPTTrailsListInteractorIO.swift in Sources */,
 				C7AB023F1C74CA09008D13DE /* PPTTrailsDataManager.swift in Sources */,
 				C70B12BA1C74A87B007FC744 /* Fix+CoreDataProperties.swift in Sources */,
 				C70B12AC1C749F05007FC744 /* PPTPersistenceManager.swift in Sources */,
 				C70B12BC1C74A87B007FC744 /* Fix.swift in Sources */,
-				C7AB023A1C74C6C0008D13DE /* PPTrailsListInteractor.swift in Sources */,
+				C7AB023A1C74C6C0008D13DE /* PPTTrailsListInteractor.swift in Sources */,
 				C70B12A91C749DC5007FC744 /* Trailer.xcdatamodeld in Sources */,
 				C70B12AF1C749F57007FC744 /* PPTPathsManager.swift in Sources */,
 				C70B12B81C74A87B007FC744 /* Trail.swift in Sources */,

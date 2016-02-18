@@ -8,6 +8,20 @@
 
 import UIKit
 
-class PPTTrailsListPresenter: NSObject {
+class PPTTrailsListPresenter: NSObject, PPTTrailsListInteractorOutput {
+    var interactor: PPTTrailsListInteractor?
+    var userInterface: PPTTrailsListViewInterface?
 
+    // MARK - PPTTrailsListInteractorOutput
+    
+    func foundTrails(trails:[Trail]){
+        if let ui = userInterface {
+            if trails.count > 0 {
+                ui.showTrailsList(trails)
+            }
+            else {
+                ui.showNoContentView()
+            }
+        }
+    }
 }
